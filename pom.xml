@@ -17,7 +17,7 @@
 	<description>Calculo de Precio de un Producto</description>
 	
 	<properties>
-		<java.version>11.0.10</java.version>
+		<java.version>11</java.version>
 	</properties>
 	
 	<dependencies>
