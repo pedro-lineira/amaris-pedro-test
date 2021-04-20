@@ -8,33 +8,39 @@ import javax.persistence.Id;
 import javax.persistence.IdClass;
 import javax.persistence.Table;
 
+import com.amarispedro.lab.price.infrastructure.configuration.PriceSearchConfig;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity
 @Table(name = "PRICE")
-@IdClass(PriceIdJPA.class)	//Utilizo IdClass en vez de EmbeddedId por claridad en las queries aunque se repite la definición de variables.
+@IdClass(PriceIdJPA.class)	
 public final class PriceJPA {
 	
 	@Id
-	@Column(name = "BRAND_ID", nullable = false, length = 5)
+	@Column(name = "BRAND_ID", nullable = false, length = 10)
 	private String brand_id;
 	@Id
-	@Column(name = "PRODUCT_ID", nullable = false, length = 25)
+	@Column(name = "PRODUCT_ID", nullable = false, length = 50)
 	private String product_id;
 	@Id
-	@Column(name = "PRICELIST", nullable = false, length = 5)
+	@Column(name = "PRICELIST", nullable = false, length = 10)
 	private String priceList;
 	
 	@Column(name = "STARTDATE")
-	@JsonFormat(pattern="yyyy-MM-dd-HH.mm.ss")
+	@JsonFormat(pattern=PriceSearchConfig.DATE_FORMAT)  
 	private LocalDateTime startDate;
 	
 	@Column(name = "ENDDATE")
-	@JsonFormat(pattern="yyyy-MM-dd-HH.mm.ss")
+	@JsonFormat(pattern=PriceSearchConfig.DATE_FORMAT)  
 	private LocalDateTime endDate;
 	
+	@Column(name = "PRIORITY")
 	private Integer priority;
+	
+	@Column(name = "PRICE")
 	private Float price;
+	
+	@Column(name = "CURRENCY", nullable = false, length = 10)
 	private String currency;
 	
 	

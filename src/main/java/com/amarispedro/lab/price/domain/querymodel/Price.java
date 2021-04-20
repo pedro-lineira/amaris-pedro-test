@@ -1,9 +1,9 @@
-package com.amarispedro.lab.price.domain;
+package com.amarispedro.lab.price.domain.querymodel;
 
 import java.time.LocalDateTime;
 
 ////////////////////////////////////////////
-///	Price: Product-PriceList Scheduler
+///	QUERY MODEL: Price: Product-PriceList Scheduler
 //////////////////////////////////////////
 public final class Price {
 	

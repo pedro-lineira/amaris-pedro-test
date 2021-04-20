@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
-import com.amarispedro.lab.price.domain.exception.MoreThanOnePriceFound;
-import com.amarispedro.lab.price.domain.exception.PriceNotFound;
+import com.amarispedro.lab.price.domain.querymodel.exception.MoreThanOnePriceFound;
+import com.amarispedro.lab.price.domain.querymodel.exception.PriceNotFound;
 
 @ControllerAdvice
 public class PriceExceptionHandler {

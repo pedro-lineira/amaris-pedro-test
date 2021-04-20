@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public final class PriceIdJPA implements Serializable{
 	
-	private static final long serialVersionUID = 1L; //TODO:
+	private static final long serialVersionUID = 3120681543622246547L;
 	
 	private String brand_id;
 	private String product_id;

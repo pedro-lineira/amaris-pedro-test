@@ -10,8 +10,8 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.amarispedro.lab.price.domain.Price;
-import com.amarispedro.lab.price.domain.persistence.PriceRepository;
+import com.amarispedro.lab.price.domain.querymodel.Price;
+import com.amarispedro.lab.price.domain.querymodel.persistence.PriceRepository;
 import com.amarispedro.lab.price.infrastructure.entity.PriceJPA;
 
 @Service
@@ -21,7 +21,7 @@ public class JPAPriceRepositoryAdapter implements PriceRepository {
 	private ModelMapper modelMapper;
 
     @Autowired
-    private JPAPriceRepository priceRepository; //TODO: comprobar inyección.
+    private JPAPriceRepository priceRepository;
     
 	@Override
 	public Optional<List<Price>> findByDate(String brand_id, String product_id, LocalDateTime date) throws RuntimeException{

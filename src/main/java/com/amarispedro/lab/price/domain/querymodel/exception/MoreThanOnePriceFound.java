@@ -1,4 +1,4 @@
-package com.amarispedro.lab.price.domain.exception;
+package com.amarispedro.lab.price.domain.querymodel.exception;
 
 public class MoreThanOnePriceFound extends RuntimeException {
 

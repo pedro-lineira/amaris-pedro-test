@@ -5,10 +5,10 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
-import com.amarispedro.lab.price.domain.Price;
-import com.amarispedro.lab.price.domain.exception.MoreThanOnePriceFound;
-import com.amarispedro.lab.price.domain.exception.PriceNotFound;
-import com.amarispedro.lab.price.domain.persistence.PriceRepository;
+import com.amarispedro.lab.price.domain.querymodel.Price;
+import com.amarispedro.lab.price.domain.querymodel.exception.MoreThanOnePriceFound;
+import com.amarispedro.lab.price.domain.querymodel.exception.PriceNotFound;
+import com.amarispedro.lab.price.domain.querymodel.persistence.PriceRepository;
 
 public class PriceSearch { 
 	
@@ -23,8 +23,7 @@ public class PriceSearch {
 		
 		Optional<List<Price>> prices = priceRepository.findByDate(brand_id, product_id, date);
 		
-		if (prices.isEmpty()) throw new PriceNotFound(); //hay un bug en Java 11 con Optional.isEmpty. Por eso hago doble check.
-		if (prices.get().size()==0) throw new PriceNotFound(); //TODO: Quitar en versiones con el bug corregido. 
+		if (prices.get().size()==0) throw new PriceNotFound(); 
 		
 		
 		Price price;
@@ -36,6 +35,8 @@ public class PriceSearch {
 		
 		return price;
 	}
+	
+	
 	
 	private Price findHighPriorityPrice(List<? extends Price> prices) {
 		Comparator<Price> priority = Comparator.comparing(Price::getPriority);
