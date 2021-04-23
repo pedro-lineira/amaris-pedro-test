@@ -1,4 +1,4 @@
-package com.amarispedro.lab.price.application;
+package com.amarispedro.lab.pricesearch.application;
 
 import java.time.LocalDateTime;
 import java.util.Comparator;

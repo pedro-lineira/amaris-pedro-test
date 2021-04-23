@@ -1,4 +1,4 @@
-package com.amarispedro.lab.price.infrastructure.entity;
+package com.amarispedro.lab.pricesearch.infrastructure.entity;
 
 import java.time.LocalDateTime;
 
@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.IdClass;
 import javax.persistence.Table;
 
-import com.amarispedro.lab.price.infrastructure.configuration.PriceSearchConfig;
+import com.amarispedro.lab.pricesearch.infrastructure.configuration.PriceSearchConfig;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity

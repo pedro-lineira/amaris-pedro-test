@@ -1,4 +1,4 @@
-package com.amarispedro.lab.price.infrastructure.persistence;
+package com.amarispedro.lab.pricesearch.infrastructure.persistence;
 
 
 import java.time.LocalDateTime;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 
 import com.amarispedro.lab.price.domain.querymodel.Price;
 import com.amarispedro.lab.price.domain.querymodel.persistence.PriceRepository;
-import com.amarispedro.lab.price.infrastructure.entity.PriceJPA;
+import com.amarispedro.lab.pricesearch.infrastructure.entity.PriceJPA;
 
 @Service
 public class JPAPriceRepositoryAdapter implements PriceRepository {

@@ -1,4 +1,4 @@
-package com.amarispedro.lab.price.infrastructure.controller;
+package com.amarispedro.lab.pricesearch.infrastructure.controller;
 
 import java.time.LocalDateTime;
 
@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
-import com.amarispedro.lab.price.application.PriceSearch;
 import com.amarispedro.lab.price.domain.querymodel.Price;
 import com.amarispedro.lab.price.domain.querymodel.exception.MoreThanOnePriceFound;
 import com.amarispedro.lab.price.domain.querymodel.exception.PriceNotFound;
-import com.amarispedro.lab.price.infrastructure.dto.PriceDTO;
+import com.amarispedro.lab.pricesearch.application.PriceSearch;
+import com.amarispedro.lab.pricesearch.infrastructure.dto.PriceDTO;
 
 @RestController
 @RequestMapping(PriceSearchController.PRICE_SEARCH_RESOURCE)

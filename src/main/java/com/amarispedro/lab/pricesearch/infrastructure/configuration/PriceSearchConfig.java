@@ -1,12 +1,12 @@
-package com.amarispedro.lab.price.infrastructure.configuration;
+package com.amarispedro.lab.pricesearch.infrastructure.configuration;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.amarispedro.lab.price.application.PriceSearch;
 import com.amarispedro.lab.price.domain.querymodel.persistence.PriceRepository;
-import com.amarispedro.lab.price.infrastructure.persistence.JPAPriceRepositoryAdapter;
+import com.amarispedro.lab.pricesearch.application.PriceSearch;
+import com.amarispedro.lab.pricesearch.infrastructure.persistence.JPAPriceRepositoryAdapter;
 
 @Configuration
 public class PriceSearchConfig {

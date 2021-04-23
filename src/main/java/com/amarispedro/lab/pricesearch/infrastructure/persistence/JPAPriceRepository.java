@@ -1,16 +1,15 @@
-package com.amarispedro.lab.price.infrastructure.persistence;
+package com.amarispedro.lab.pricesearch.infrastructure.persistence;
 
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.amarispedro.lab.price.infrastructure.entity.PriceIdJPA;
-import com.amarispedro.lab.price.infrastructure.entity.PriceJPA;
+import com.amarispedro.lab.pricesearch.infrastructure.entity.PriceIdJPA;
+import com.amarispedro.lab.pricesearch.infrastructure.entity.PriceJPA;
 
 @Repository
 public interface JPAPriceRepository extends JpaRepository<PriceJPA, PriceIdJPA> {

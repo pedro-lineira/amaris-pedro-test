@@ -1,8 +1,8 @@
-package com.amarispedro.lab.price.infrastructure.dto;
+package com.amarispedro.lab.pricesearch.infrastructure.dto;
 
 import java.time.LocalDateTime;
 
-import com.amarispedro.lab.price.infrastructure.configuration.PriceSearchConfig;
+import com.amarispedro.lab.pricesearch.infrastructure.configuration.PriceSearchConfig;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class PriceDTO {

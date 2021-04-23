@@ -1,4 +1,4 @@
-package com.amarispedro.lab.price.infrastructure.entity;
+package com.amarispedro.lab.pricesearch.infrastructure.entity;
 
 import java.io.Serializable;
 

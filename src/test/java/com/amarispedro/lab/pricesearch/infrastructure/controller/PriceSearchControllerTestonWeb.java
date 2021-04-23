@@ -1,4 +1,4 @@
-package com.amarispedro.lab.price.infrastructure.controller;
+package com.amarispedro.lab.pricesearch.infrastructure.controller;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -19,9 +19,10 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.amarispedro.lab.PriceSearchApp;
-import com.amarispedro.lab.price.application.PriceSearch;
 import com.amarispedro.lab.price.domain.querymodel.Price;
+import com.amarispedro.lab.pricesearch.PriceSearchApp;
+import com.amarispedro.lab.pricesearch.application.PriceSearch;
+import com.amarispedro.lab.pricesearch.infrastructure.controller.PriceSearchController;
 
 
 

@@ -1,4 +1,4 @@
-package com.amarispedro.lab.price.infrastructure.controller;
+package com.amarispedro.lab.pricesearch.infrastructure.controller;
 
 import java.time.LocalDateTime;
 import java.util.LinkedHashMap;
