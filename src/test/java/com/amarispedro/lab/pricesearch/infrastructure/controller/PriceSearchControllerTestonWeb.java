@@ -22,7 +22,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import com.amarispedro.lab.price.domain.querymodel.Price;
 import com.amarispedro.lab.pricesearch.PriceSearchApp;
 import com.amarispedro.lab.pricesearch.application.PriceSearch;
-import com.amarispedro.lab.pricesearch.infrastructure.controller.PriceSearchController;
 
 
 

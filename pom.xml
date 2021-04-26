@@ -10,7 +10,7 @@
 	<parent>
 		<groupId>com.amarispedro.lab</groupId>
 		<artifactId>code-test</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.2-SNAPSHOT</version>
 		<relativePath>..\code-test</relativePath> 
 	</parent>
 	
@@ -63,13 +63,6 @@
 
 	</dependencies>
 
-<!--  	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build> -->
 
+	
 </project>

@@ -2,7 +2,7 @@
 Prueba técnica
 
 # Arranque
-./mvn install && ./mvn spring-boot:run -pl prices
+./mvn install && ./mvn spring-boot:run -pl priceSearch
 
 #consulta
 #getPriceByDate/{brand_id}/{product_id}/{date}
